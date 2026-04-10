@@ -1,0 +1,82 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sg-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sg-icon { font-size: 1.3rem; }
+
+.sg-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.sg-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+/* ── Pill variants ───────────────────────────────── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: .82rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: default;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.3);
+}
+
+.pill-accent {
+  background: rgba(124,110,247,.13);
+  color: #7c6ef7;
+  border-color: rgba(124,110,247,.28);
+}
+.pill-accent:hover { background: rgba(124,110,247,.22); }
+
+.pill-sky {
+  background: rgba(56,189,248,.1);
+  color: #38bdf8;
+  border-color: rgba(56,189,248,.28);
+}
+.pill-sky:hover { background: rgba(56,189,248,.2); }
+
+.pill-green {
+  background: rgba(52,211,153,.1);
+  color: #34d399;
+  border-color: rgba(52,211,153,.28);
+}
+.pill-green:hover { background: rgba(52,211,153,.2); }
+
+.pill-muted {
+  background: var(--surface-2);
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+.pill-muted:hover {
+  background: var(--surface-3);
+  color: var(--text);
+}

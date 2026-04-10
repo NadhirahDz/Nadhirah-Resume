@@ -1,0 +1,95 @@
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.cert-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: .85rem;
+  color: #fff;
+}
+
+.badge-orange { background: linear-gradient(135deg, #f97316, #fb923c); box-shadow: 0 4px 16px rgba(249,115,22,.35); }
+.badge-blue   { background: linear-gradient(135deg, #3b82f6, #60a5fa); box-shadow: 0 4px 16px rgba(59,130,246,.35); }
+.badge-green  { background: linear-gradient(135deg, #10b981, #34d399); box-shadow: 0 4px 16px rgba(16,185,129,.35); }
+.badge-purple { background: linear-gradient(135deg, #7c6ef7, #a78bfa); box-shadow: 0 4px 16px rgba(124,110,247,.35); }
+
+.cert-title  { font-size: 1rem; font-weight: 700; color: var(--text); }
+.cert-issuer { font-size: .85rem; color: var(--accent); font-weight: 500; }
+
+.cert-desc {
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.68;
+  flex: 1;
+}
+
+.cert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+/* ── Coming Soon state ───────────────────────── */
+.coming-soon-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.cs-card {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+}
+
+.cs-icon    { font-size: 3rem; }
+.cs-heading { font-size: 1.5rem; font-weight: 700; color: var(--text); }
+
+.cs-text {
+  font-size: .925rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.cs-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: .5rem;
+}

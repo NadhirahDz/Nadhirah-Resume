@@ -1,0 +1,85 @@
+/* ── Timeline layout ────────────────────────────── */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(to bottom, #7c6ef7, #38bdf8, rgba(56,189,248,.1));
+  border-radius: 2px;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.tl-item:last-child { margin-bottom: 0; }
+
+/* Dot */
+.tl-dot {
+  position: absolute;
+  left: -2rem;
+  top: 1.6rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c6ef7, #38bdf8);
+  box-shadow: 0 0 0 4px rgba(124,110,247,.2);
+  z-index: 1;
+}
+
+/* Card */
+.tl-card { transition: transform var(--transition); }
+.tl-card:hover { transform: translateX(5px); }
+
+/* Header row */
+.tl-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .75rem;
+  flex-wrap: wrap;
+}
+
+.tl-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .2rem;
+}
+
+.tl-org {
+  font-size: .875rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Bullet points */
+.tl-points {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.tl-points li {
+  font-size: .9rem;
+  color: var(--text-muted);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+.tl-points li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
