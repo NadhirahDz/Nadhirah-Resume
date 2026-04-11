@@ -93,3 +93,107 @@
   justify-content: center;
   margin-top: .5rem;
 }
+
+/* ── References Section ──────────────────────── */
+.ref-section {
+  margin-top: 3.5rem;
+}
+
+.ref-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: .4rem;
+}
+
+.ref-subtitle {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.ref-card {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.ref-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.ref-top {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+}
+
+.ref-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent-grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: .9rem;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(109,92,232,.3);
+}
+
+.ref-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.ref-org {
+  font-size: .85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.ref-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: .25rem;
+}
+
+.ref-contact-item {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .875rem;
+}
+
+.ref-icon { font-size: .9rem; }
+
+.ref-link {
+  color: var(--accent-2);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.ref-link:hover { color: var(--accent); }
+
+.ref-val {
+  color: var(--text-muted);
+  font-weight: 500;
+}

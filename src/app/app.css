@@ -3,10 +3,10 @@
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(13, 15, 20, 0.88);
+  background: rgba(243, 240, 255, 0.90);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(109, 92, 232, 0.15);
 }
 
 .navbar-inner {
@@ -44,7 +44,7 @@
 .brand-name {
   font-weight: 600;
   font-size: 0.95rem;
-  color: #f0f4ff;
+  color: #1e1b4b;
 }
 
 /* Links */
@@ -55,7 +55,7 @@
 }
 
 .nav-links a {
-  color: #8892a4;
+  color: #6b7080;
   text-decoration: none;
   font-size: 0.845rem;
   font-weight: 500;
@@ -66,13 +66,13 @@
 }
 
 .nav-links a:hover {
-  color: #f0f4ff;
-  background: rgba(255, 255, 255, 0.05);
+  color: #1e1b4b;
+  background: rgba(109, 92, 232, 0.08);
 }
 
 .nav-links a.active {
-  color: #7c6ef7;
-  background: rgba(124, 110, 247, 0.12);
+  color: #6d5ce8;
+  background: rgba(109, 92, 232, 0.12);
 }
 
 /* ── Main offset ─────────────────────────────────────── */
